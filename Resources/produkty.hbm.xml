@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13 sty 2021, 03:51:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="invoice.Produkty" table="produkty">
+        <id name="id" type="int" access="field">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="cena" type="float" access="field">
+            <column name="cena" />
+        </property>
+        <property name="nazwa" type="string" access="field">
+            <column name="nazwa" />
+        </property> 
+    </class>
+</hibernate-mapping>

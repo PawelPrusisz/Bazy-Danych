@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13 sty 2021, 03:51:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="invoice.Zawartoscfaktury" table="zawartoscfaktury">
+        <id name="id" type="int" access="field">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="fakturaId" type="int" access="field">
+            <column name="fakturaId" />
+        </property>
+        <property name="produktId" type="int" access="field">
+            <column name="produktId" />
+        </property>
+        <property name="ilosc" type="int" access="field">
+            <column name="ilosc" />
+        </property>        
+    </class>
+</hibernate-mapping>
+

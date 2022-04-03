@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13 sty 2021, 03:51:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping default-lazy="false">
+ <class name="invoice.Klient" table="klient">
+  <id access="field" name="logowanieId" type="int">
+   <column name="logowanieId"/>
+   <generator class="assigned"/>
+  </id>
+  <property access="field" generated="never" lazy="false" name="imie" type="string">
+   <column name="imie"/>
+  </property>
+  <property access="field" generated="never" lazy="false"
+   name="nazwisko" type="string">
+   <column name="nazwisko"/>
+  </property>
+  <property access="field" generated="never" lazy="false" name="nip" type="string">
+   <column name="nip"/>
+  </property>
+  <property access="field" generated="never" lazy="false" name="telefon" type="string">
+   <column name="telefon"/>
+  </property>
+  <property access="field" generated="never" lazy="false" name="email" type="string">
+   <column name="email"/>
+  </property>
+ </class>
+</hibernate-mapping>

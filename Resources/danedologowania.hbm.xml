@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13 sty 2021, 03:51:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping default-lazy="false">
+ <class name="invoice.Danedologowania" table="danedologowania">
+  <id access="field" name="id" type="int">
+   <column name="id"/>
+   <generator class="assigned"/>
+  </id>
+  <property access="field" generated="never" lazy="false" name="login" type="string">
+   <column name="login"/>
+  </property>
+  <property access="field" generated="never" lazy="false" name="haslo" type="string">
+   <column name="haslo"/>
+  </property>
+  <property access="field" generated="never" lazy="false"
+   name="typKonta" type="string">
+   <column name="typKonta"/>
+  </property>
+  <property access="field" generated="never" lazy="false" name="status" type="string">
+   <column name="status"/>
+  </property>
+ </class>
+</hibernate-mapping>
